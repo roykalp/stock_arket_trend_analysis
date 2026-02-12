@@ -1,4 +1,4 @@
-# stock_arket_trend_analysis
+# stock_market_trend_analysis
 A scalable ETL pipeline analyzing 50+ global stocks. Automates data ingestion, cleanses volatility metrics, and stores historical trends in SQL. Built with Python, Pandas, and SQLite.
 # 📈 Automated Stock Market ETL Pipeline
 
@@ -34,7 +34,7 @@ The core objective was to build a system that is **fault-tolerant** and capable 
 ### **How to Run Locally**
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/automated-stock-etl-pipeline.git](https://github.com/YOUR_USERNAME/automated-stock-etl-pipeline.git)
+   git clone https://github.com/roykalp/stock_arket_trend_analysis.git
     ```
 2.  Install dependencies:
     ```bash
@@ -46,11 +46,10 @@ The core objective was to build a system that is **fault-tolerant** and capable 
     ```
 4.  Check the `reports` folder for the latest analysis graphs.
 
-### **Sample Output**
+### **Output**
 _Automated trend analysis identifying an uptrend in Apple (AAPL) stock:_
-![Sample Analysis](reports/AAPL_analysis.png)
-*(Note: You can upload your actual image here)*
+![Analysis](reports/AAPL_analysis.png)
 
 ---
 **Author:** Kalpataru Roy
-*Aspiring Data Engineer*
+
