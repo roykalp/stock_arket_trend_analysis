@@ -31,21 +31,30 @@ The core objective was to build a system that is **fault-tolerant** and capable 
 3.  **Load:** Inserts the clean, structured data into a local `market_data.db` SQL database.
 4.  **Report:** Exports `.png` trend analysis charts to the `reports/` directory.
 
-### **How to Run Locally**
-1.  Clone the repository:
-    ```bash
-   git clone https://github.com/roykalp/stock_arket_trend_analysis.git
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install pandas matplotlib yfinance
-    ```
-3.  Run the pipeline:
-    ```bash
-    python stock_etl_pipeline.py
-    ```
-4.  Check the `reports` folder for the latest analysis graphs.
+### ⚙️ How to Run Locally
 
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/roykalp/stock_market_trend_analysis.git](https://github.com/roykalp/stock_market_trend_analysis.git)
+    cd stock_market_trend_analysis
+    ```
+
+2.  **Install dependencies**
+    Install the required Python libraries using the requirements file:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Alternatively: `pip install pandas matplotlib yfinance`)*
+
+3.  **Run the ETL Pipeline**
+    Execute the main script to fetch real-time data and generate insights:
+    ```bash
+    python stock_analysis.py
+    ```
+
+4.  **View Results**
+    * **Visuals:** Check the `reports/` folder for the latest trend graphs (e.g., `AAPL_analysis.png`).
+    * **Database:** The cleaned historical data is stored in `market_data.db`.
 ### **Output**
 _Automated trend analysis identifying an uptrend in Apple (AAPL) stock:_
 ![Analysis](reports/AAPL_analysis.png)
